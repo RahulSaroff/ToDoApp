@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dist/css/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/7bf2c8bee0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>
+            <h1>To Do App</h1>
+        </header>
+        <div class="add">
+            <form>
+                <input type="text" class="todo" /><button class="addToDoBtn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+            <div class="select">
+                <select class="filter-todos">
+                    <option value="all">All</option>
+                    <option value="complete">Completed</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="todos">
+            <ul class="todo-list"></ul>
+        </div>
+
+        <script src="dist/js/app.js"></script>
+    </body>
+</html>
